@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% load staticfiles %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" href="{% static 'music/css/style.css' %}" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <title>Bre Music</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top_bar">
+        <div class="logo">Bre</div>
+        <div class="subsections"><a href="#">Home</a></div>
+        <div class="subsections"><a href="#shows">Shows</a></div>
+        <div class="subsections"><a href="#bio">Bio</a></div>
+        <div class="subsections"><a href="#shop">Shop</a></div>
+        <div class="subsections"> <a href="https://fanlink.to/kWk">Music</a></div>
+        <div class="subsections"><a href="https://www.youtube.com/c/bremusic">Videos</a></div>
+      </div>
+      <div class="home_page">
+        <div class="in_home">
+          <div class="album"><img src="static/images/new_pic.jpg" alt="Me" width=250px
+          height=250px></div>
+          <div class="coming_soon">
+            <div class="cs_words">
+              <a name="home"><h1>Coming Soon</h1></a><br>
+              <h3>Getting Real: An EP</h3>
+            </div>
+            <div class="socials"><a href="http://www.facebook.com/bremusicofficial"><img src="static/images/fac.png" alt="Facebook" height=45px width=45px></a></div>
+            <div class="socials"><a href="https://twitter.com/BreLynnMusic"><img src="static/images/twit.png" alt="Twitter" height=47px width=47px></a></div>
+            <div class="socials"><a href="https://open.spotify.com/artist/5pfxIwUwxH4fXSi9dw00nK"><img src="static/images/spot.png" alt="Spotify" height=45px width=45px></a></div>
+            <div class="socials"><a href="http://www.youtube.com/breannalynnmusic"><img src="static/images/you.png" alt="Youtube" height=48px width=48px></a></div>
+            <div class="socials"><img src="static/images/ins.png" alt="Instagram" height=45px width=45px></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shows_left_al">
+        <div class="tour"><script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Bre" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="black" data-link-color="gold" data-popup-background-color="#white" data-background-color="#white" data-display-limit="15" data-link-text-color="#FFFFFF"></a></div>
+        <div class="image_bio"><a name="shows"></a>
+          <div class="show_word">
+            <h1>Shows<h1>
+            </div>
+            <div class="small_desc">
+              <p>Bre performs anywhere and everywhere. From small gigs in intimate venues, to outdoor events and private parties. Check here for all her upcoming dates!</p>
+
+            </div>
+            <a href="home">Back To Top</a>
+          </div>
+
+        </div>
+        <div class="home_page">
+          <div class="image_bio"><a name="bio"></a>
+            <div class="show_word">
+            <h1>Bio<h1>
+            </div>
+
+          </div>
+          <div class="bio"><p>Bre is as much of a verteran of the music business as one can be at 21 years old. Having performed under many different stage names, including Breanna Lynn, and with her band Bre-L, this newest iteration is taking place after two years of radio silence. But now she's back with all new material, bringing some of her most intimate material and heartfelt lyrics to share. Her newest EP, 'Getting Real' is a compliation of songs about what it's like going through your twenties, understanding the complexities of what it's like growing up in a pressure filled society, and the excitement of the future ahead. Follow Bre on social media to keep up to date about her newest material, upcoming shows, and exciting news!</p><br><a href="home">Back To Top</a></div>
+        </div>
+        <div class="shows_left_al">
+          <div class="shop_word">
+          <a name="shop"></a><h1>Shop<h1>
+          </div>
+          <div class="albums_div">
+            <div class="albums">
+              <div class="album_pics">
+                <img src="static/images/breanna_lynn.png" alt="Breanna Lynn" width=200px
+                  height=200px>
+
+              </div>
+              <p>Price: $8.99</p>
+              <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_test_Ct86Wq95FL1PWg5zepxkxt7g"
+                data-amount="899"
+                data-name="Breanna Lynn"
+                data-description="Widget"
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-locale="auto"
+                data-zip-code="true">
+              </script>
+            </div>
+            <div class="albums">
+              <div class="album_pics">
+                <img src="static/images/c_f.jpg" alt="Catching Fire" width=200px
+                  height=200px>
+
+              </div>
+              <p>Price: $5.99</p>
+                <a href="https://itunes.apple.com/mt/album/catching-fire-ep/id582683515" id="button">Take me to Itunes</a>
+            </div>
+            <div class="albums">
+              <div class="album_pics">
+                <img src="static/images/bre_l.jpg" alt="Bre_l" width=200px
+                  height=200px>
+
+              </div>
+              <p>Price: $8.99</p>
+              <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_test_Ct86Wq95FL1PWg5zepxkxt7g"
+                data-amount="899"
+                data-name="Bre-L"
+                data-description="Widget"
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-locale="auto"
+                data-zip-code="true">
+              </script>
+            </div>
+            <br>
+          </div>
+        </div>
+        <div class="footer">
+
+          <br><br><p>Copyright of Dream Awake Productions 2017. All rights reserved.</p>
+        </div>
+
+      </div>
+
+  </body>
+</html>
